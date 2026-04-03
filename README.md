@@ -1,2 +1,2 @@
 # welcomeTorepos2026
-this repo will create from terraform
+this repo will create from terraform command 
