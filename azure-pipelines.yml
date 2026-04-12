@@ -19,12 +19,12 @@ stages:
   
         - task: TerraformTask@5
           inputs:
-              provider: 'azurerm'
-              command: 'init'
-              backendAzureRmUseEntraIdForAuthentication: false
-              backendServiceArm: 'Azure-Service-connection'
-              backendAzureRmOverrideSubscriptionID: '7b4fa607-b447-4f15-99df-721b7b10c661'
-              backendAzureRmResourceGroupName: 'terraform-resource-group'
-              backendAzureRmStorageAccountName: 'abcrunterraformcloudshell'
-              backendAzureRmContainerName: 'tfstate'
-              backendAzureRmKey: 'prod.terraform.tfstate'
+            provider: 'azurerm'
+            command: 'init'
+            backendAzureRmUseEntraIdForAuthentication: false
+            backendServiceArm: 'Azure-Service-connection'
+            backendAzureRmOverrideSubscriptionID: '7b4fa607-b447-4f15-99df-721b7b10c661'
+            backendAzureRmResourceGroupName: 'terraform-resource-group'
+            backendAzureRmStorageAccountName: 'runterraformcloudshell'
+            backendAzureRmContainerName: 'tfstate'
+            backendAzureRmKey: 'prod.terraform.tfstate'
