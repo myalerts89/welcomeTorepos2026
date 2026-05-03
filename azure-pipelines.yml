@@ -28,3 +28,9 @@ stages:
             backendAzureRmStorageAccountName: 'terraformstorage2026'
             backendAzureRmContainerName: 'terraform-tfstat'
             backendAzureRmKey: 'prod.terraform.tfstate'
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'plan'
+            environmentServiceNameAzureRM: 'Azure-Service-connection'
+            
