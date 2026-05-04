@@ -27,7 +27,7 @@ stages:
             backendAzureRmOverrideSubscriptionID: '7b4fa607-b447-4f15-99df-721b7b10c661'
             backendAzureRmResourceGroupName: 'rg-welcome-to-terraform-azure-devops'
             backendAzureRmStorageAccountName: 'terraformstorage2026'
-            backendAzureRmContainerName: 'terraform-tfstat'
+            backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'prod.terraform.tfstate'
         - task: TerraformTask@5
           displayName: terraform Plan
