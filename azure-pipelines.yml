@@ -34,6 +34,6 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'plan'
-            commandOptions: 'terraform plan -lock-timeout=5m'
+            commandOptions: '-lock-timeout=5m -detailed-exitcode'
             environmentServiceNameAzureRM: 'Azure-Service-connection'
             
